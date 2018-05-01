@@ -12,6 +12,16 @@
 $x = 4 + "cat";
 echo "<p>$x</p>";
 
+
+this
+is
+bad
+code
+
+// For loop here to iterate through 10 times
+  // echo out a div with id "div$i"
+
+
 ?>
 
 </body>
