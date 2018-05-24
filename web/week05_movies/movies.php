@@ -40,15 +40,10 @@ foreach ($db->query($query) as $movie)
     $year = $movie["year"];
     
     echo "<li>$title ($year)</li>";
+    var_dump($movie);
 }
 
 ?>
-
-        <li>xlksjflsdjflksdjf</li>
-        <li>xlksjflsdjflksdjf</li>
-        <li>xlksjflsdjflksdjf</li>
-        <li>xlksjflsdjflksdjf</li>
-        <li>xlksjflsdjflksdjf</li>
     </ul>
 
 </body>
