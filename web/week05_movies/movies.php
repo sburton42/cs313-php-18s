@@ -40,7 +40,7 @@ foreach ($db->query($query) as $movie)
     $year = $movie["year"];
     $rating = $movie["code"];
     
-    echo "<li>$title ($year)</li>";
+    echo "<li>$title ($year) - Rated $rating</li>";
 }
 
 ?>
