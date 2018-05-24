@@ -33,7 +33,9 @@ catch (PDOException $ex)
     <ul>
 <?php
 
-$query = "SELECT m.title, m.year, r.code FROM movies m INNER JOIN ratings r ON m.rating_id = r.id";
+$user_rating = $_GET["rating"];
+
+$query = "SELECT m.title, m.year, r.code FROM movies m INNER JOIN ratings r ON m.rating_id = r.id WHERE r.code = '$user_rating'";
 foreach ($db->query($query) as $movie)
 {
     $title = $movie["title"];
