@@ -2,15 +2,22 @@
 
 session_start();
 
-$key_sessionCount = "session-count";
+// $_SESSION["username"] = "burton";
+// $_SESSION["displayName"] = "Scott Burton";
+// $_SESSION["zip"] = 83440;
 
-if (isset($_SESSION[$key_sessionCount])) {
-    $_SESSION[$key_sessionCount]++;
+
+// echo($_SESSION["zip"]);
+
+
+
+if (isset($_SESSION["session-count"])) {
+    $_SESSION["session-count"]++;
 } else {
-    $_SESSION[$key_sessionCount] = 0;
+    $_SESSION["session-count"] = 0;
 }
 
-$sessionCount = $_SESSION[$key_sessionCount];
+$sessionCount = $_SESSION["session-count"];
 
 ?>
 <html>
