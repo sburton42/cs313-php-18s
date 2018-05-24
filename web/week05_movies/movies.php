@@ -33,14 +33,14 @@ catch (PDOException $ex)
     <ul>
 <?php
 
-$query = "SELECT title, year FROM movies";
+$query = "SELECT m.title, m.year, r.code FROM movies m INNER JOIN ratings r ON m.rating_id = r.id";
 foreach ($db->query($query) as $movie)
 {
     $title = $movie["title"];
     $year = $movie["year"];
+    $rating = $movie["code"];
     
     echo "<li>$title ($year)</li>";
-    var_dump($movie);
 }
 
 ?>
