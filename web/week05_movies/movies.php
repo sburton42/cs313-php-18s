@@ -31,6 +31,19 @@ catch (PDOException $ex)
     <h1>Movies</h1>
 
     <ul>
+<?php
+
+$query = "SELECT title, year FROM movies";
+foreach ($db->query($query) as $movie)
+{
+    $title = $movie["title"];
+    $year = $movie["year"];
+    
+    echo "<li>$title ($year)</li>";
+}
+
+?>
+
         <li>xlksjflsdjflksdjf</li>
         <li>xlksjflsdjflksdjf</li>
         <li>xlksjflsdjflksdjf</li>
