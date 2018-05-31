@@ -20,6 +20,7 @@ $statement->bindValue(":date", $date, PDO::PARAM_STR);
 
 $statement->execute();
 
-echo "It has been inserted...";
+header("Location: courseDetails.php?course_id=$courseId");
+die();
 
 ?>
