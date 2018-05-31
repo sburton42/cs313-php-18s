@@ -35,6 +35,8 @@ $name = $row["name"];
 <input type="date" name="date"><br>
 <textarea name="content" placeholder="Content"></textarea>
 
+<br><br>
+<input type="submit" value="Add Note">
 </form>
 
 </body>
