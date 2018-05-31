@@ -29,12 +29,16 @@ $courses = $statement->fetchAll(PDO::FETCH_ASSOC);
 	<ul>
 
 <?php
-var_dump($courses);
-?>		
-		<li><p>Course 1</p></li>
-		<li><p>Course 2</p></li>
-		<li><p>Course 3</p></li>
-		<li><p>Course 4</p></li>
+
+foreach ($courses as $course) {
+	$name = $course["name"];
+	$number = $course["number"];
+
+	echo "<li>$number - $name</li>";
+}
+
+?>
+
 	</ul>
 
 </body>
